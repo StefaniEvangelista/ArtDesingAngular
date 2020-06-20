@@ -10,6 +10,7 @@ import { IlustrativaComponent } from './ilustrativa/ilustrativa.component';
 import { FormularioOrcamentoComponent } from './formulario-orcamento/formulario-orcamento.component';
 import { TelaPrincipalRoutingModule } from './tela-principal/tela-principal-routing.module';
 import { FormularioOrcamentoRoutingModule } from './formulario-orcamento/formulario-orcamento-routing.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormularioOrcamentoRoutingModule } from './formulario-orcamento/formula
     ProdutosComponent,
     RedesSociaisComponent,
     IlustrativaComponent,
-    FormularioOrcamentoComponent
+    FormularioOrcamentoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
