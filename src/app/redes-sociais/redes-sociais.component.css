@@ -1,0 +1,43 @@
+
+ a {
+   color: #fdcc52;
+   transition: all .35s;
+ }
+
+ .a-edit {
+  background-color: #7093c7!important;
+  transition: all .35s;
+ }
+ 
+ section {
+   padding: 100px 0;
+ }
+ 
+ section h2 {
+   font-size: 50px;
+ }
+ 
+ section.contact {
+   text-align: center;
+ }
+ 
+ .bg-primary {
+   background: #fdcc52;
+   background: linear-gradient(#fdcc52, #fdc539);
+ }
+ 
+ .btn {
+   border-radius: 300px;
+   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+   letter-spacing: 2px;
+   text-transform: uppercase;
+ }
+ 
+ .btn-xl {
+   font-size: 11px;
+   padding: 15px 45px;
+ }
+ 
+ .img-edit{
+   width: 80px;
+ }
