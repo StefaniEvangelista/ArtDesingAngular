@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TelaPrincipalComponent } from './tela-principal.component';
+import { FormularioOrcamentoComponent } from './formulario-orcamento.component';
 
 const routes: Routes = [
     {
-        path: 'tela-principal',
-        component: TelaPrincipalComponent,
+        path: 'formulario-orcamento',
+        component: FormularioOrcamentoComponent,
     }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 
-export class TelaPrincipalRoutingModule { }
+export class FormularioOrcamentoRoutingModule { }

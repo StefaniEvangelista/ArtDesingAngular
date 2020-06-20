@@ -1,0 +1,37 @@
+<section class="download bg-primary text-center" id="download">
+    <div>
+        <img src="../../assets/img/ArtDesing.png" class="img-fluid" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="inputTelefone" placeholder="Telefone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div>
+                        <label>Qual tipo de serviço você deseja solicitar?</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Descreva em poucos caracteres"></textarea>
+                    </div>
+                    <div class="col-lg-7 my-auto">
+                        <div class="header-content mx-auto button-edit">
+                            <a [routerLink]='["../tela-principal"]' class="btn btn-outline btn-xl js-scroll-trigger">Voltar</a>
+                            <a class="btn btn-outline btn-xl js-scroll-trigger">Enviar</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

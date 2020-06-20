@@ -7,6 +7,9 @@ import { OrcamentoComponent } from './orcamento/orcamento.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { RedesSociaisComponent } from './redes-sociais/redes-sociais.component';
 import { IlustrativaComponent } from './ilustrativa/ilustrativa.component';
+import { FormularioOrcamentoComponent } from './formulario-orcamento/formulario-orcamento.component';
+import { TelaPrincipalRoutingModule } from './tela-principal/tela-principal-routing.module';
+import { FormularioOrcamentoRoutingModule } from './formulario-orcamento/formulario-orcamento-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,11 +18,15 @@ import { IlustrativaComponent } from './ilustrativa/ilustrativa.component';
     OrcamentoComponent,
     ProdutosComponent,
     RedesSociaisComponent,
-    IlustrativaComponent
+    IlustrativaComponent,
+    FormularioOrcamentoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormularioOrcamentoRoutingModule,
+    TelaPrincipalRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
