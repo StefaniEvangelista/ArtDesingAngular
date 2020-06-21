@@ -67,3 +67,9 @@ p {
     justify-content: space-between;
     display: flex;
   }
+
+  .btn-edit {
+    color: white;
+    border-color: #7093c7;
+    background-color: #7093c7;
+  }

@@ -12,6 +12,8 @@ import { TelaPrincipalRoutingModule } from './tela-principal/tela-principal-rout
 import { FormularioOrcamentoRoutingModule } from './formulario-orcamento/formulario-orcamento-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ModalModule, BsModalRef } from 'ngx-bootstrap/modal';
+
 
 @NgModule({
   declarations: [
@@ -29,10 +31,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     ReactiveFormsModule,
     FormularioOrcamentoRoutingModule,
-    TelaPrincipalRoutingModule
-
+    TelaPrincipalRoutingModule,
+    ModalModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    BsModalRef
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
