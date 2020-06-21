@@ -5,29 +5,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <form>
+                <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome"
+                                formControlName="nome">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome"
+                                formControlName="sobrenome">
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="number" class="form-control" id="inputTelefone" placeholder="Telefone">
+                        <input type="number" class="form-control" id="inputTelefone" placeholder="Telefone"
+                            formControlName="telefone">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Email"
+                            formControlName="email">
                     </div>
                     <div>
                         <label>Qual tipo de serviço você deseja solicitar?</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Descreva em poucos caracteres"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Descreva em poucos caracteres" formControlName="servico"></textarea>
                     </div>
                     <div class="col-lg-7 my-auto">
                         <div class="header-content mx-auto button-edit">
-                            <a [routerLink]='["../tela-principal"]' class="btn btn-outline btn-xl js-scroll-trigger">Voltar</a>
-                            <a class="btn btn-outline btn-xl js-scroll-trigger">Enviar</a>
+                            <button [routerLink]='["../tela-principal"]'
+                                class="btn btn-outline btn-xl js-scroll-trigger">Voltar</button>
+                            <button type="submit" class="btn btn-outline btn-xl js-scroll-trigger"
+                                [disabled]="disableButton()">Enviar</button>
                         </div>
                     </div>
                 </form>

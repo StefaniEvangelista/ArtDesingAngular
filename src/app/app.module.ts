@@ -11,6 +11,7 @@ import { FormularioOrcamentoComponent } from './formulario-orcamento/formulario-
 import { TelaPrincipalRoutingModule } from './tela-principal/tela-principal-routing.module';
 import { FormularioOrcamentoRoutingModule } from './formulario-orcamento/formulario-orcamento-routing.module';
 import { FooterComponent } from './footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormularioOrcamentoRoutingModule,
     TelaPrincipalRoutingModule
 
